@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title> Application form</title>
+	<h2> Job Application Form</h2>
+</head>
+<body style="background-color:powderblue;">
+<form>
+<fieldset>
+	<legend>Personal Details</legend>
+<!-- <input> :text field, <fieldset> tag-->
+	Firstname: <input type="text" id="fn" name="fname" value="Julia">	
+	<br>Middlename: <input type="text" id="mn" name="mname" value="Mariam">	
+	<br>Lastname: <input type="text" id="ln" name="lname" value="Fedin">
+<!--<input> : Date-->	
+	<br>Date Of Birth: <input type="date" id="ln" name="lname" value="Fedin">	
+<!--<input> : radio button-->	
+	<br>Gender:<input type="radio" id="m" name="nnn">Male
+	<input type="radio" id="f" name="nnn"> Female
+<!--Text area-->
+	<br>Address:<textarea rows:"50" cols:"70">XXXX</textarea>
+</fieldset>
+
+<br><br>
+
+<fieldset>
+	<legend>Work Details</legend>
+	<!--<input> : check box-->	
+	<br>Skill set:<input type="checkbox" id="sk1" name="skillset"> c/c++
+	<input type="checkbox" id="sk2" name="skillset">Python
+	<input type="checkbox" id="sk3" name="skillset">HTML
+	<input type="checkbox" id="sk4" name="skillset">Ruby
+	
+	<br>Have prior work experience:<input type="radio" id="n" name="work"> Yes
+	<input type="radio" id="n" name="work"> No
+<!--<select> tag-->
+<br><br>If yes then fill below details:
+
+<br>Experience<select id="yesid" name="exp">
+<br><optgroup label="1 year">
+<option value="1year">1.5 year</option>
+<optgroup label="2 year">
+<option value="2year">2.5 year</option>
+<optgroup label="3 year">
+<option value=">2year">3.5 year</option>
+</select>
+
+</fieldset>
+
+<br><br>
+
+<br><br>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</body>
+</html>
