@@ -73,10 +73,12 @@ insert into prerequisite values('CS3380', 'MATH2410');
 insert into prerequisite values('CS3320', 'CS1310');
 
 #3. Retrieve the list of  all courses and grades of ‘Smith’
-
+'''
 select course.course_name, grade_report.grade 
 from grade_report join course join student 
 where student.major=course.department and grade_report.student_number=student.student_number and student.sname="Smith";
+'''
+select COURSE.CourseName,GRADE_REPORT.Grade from COURSE join (SECTION join GRADE_REPORT on SECTION.SectionIdentifier=GRADE_REPORT.SectionIdentifier) on COURSE.CourseNumber=SECTION.CourseNumber where GRADE_REPORT.StudentNumber=(select StudentNumber from STUDENT where name='smith');
 
 #4. List the names of students who took the section of the ‘Database’ course offered in fall 2008 and their grades in that section.
 
